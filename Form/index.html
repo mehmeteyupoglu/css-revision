@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Form Elemanları
+        </title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <form action="https://httpbin.org/post" method="POST">
+            <div class="form-row">
+                <label for="adi">Adı</label>
+                <input name="adi" type="text" id="adi" required placeholder="Mehmet Eyupoglu">
+            </div>
+            <div class="form-row">
+                <label for="telefon">Telefon</label>
+                <input name="telefon" type="tel" id="telefon" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input name="email" type="text" id="email" required>
+            </div>
+            <div class="form-row">
+                <label for="mesaj">Mesaj</label>
+                <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-row">
+                <label for="sehir">Şehir</label>
+                <select name="sehir" id="sehir">
+                    <option value="34">İstanbul</option>
+                    <option value="06" selected>Ankara</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <p>Sevdiğiniz Renk</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="renk" value="kirmizi" checked> Kırmızı</label>
+                    <label><input type="radio" name="renk" value="yesil"> Yeşil</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="reset">
+                    Sıfırla
+                </button>
+                <button type="submit">
+                    Gönder
+                </button>
+            </div>
+            
+        </form>
+    </body>
+</html>
