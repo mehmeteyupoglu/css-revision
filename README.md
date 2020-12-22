@@ -4,7 +4,7 @@ Bu notlar [Adem İlter'in](https://github.com/ademilter) [CSS Eğitimi](https://
 
 ## Html Yapısı, Inline ve Block Elementler
 
-- `div` ve `p` `display` değeri `css display:block` olarak gelir.
+- `div` ve `p` `display` değeri `display:block` olarak gelir.
 - `inline` elemana bazı özellikler tanımlanamaz: `height` gibi. Bunu yapabilmek için `css display: inline-block` olarak display seçimi yapılması gerekir.
 - En çok kullanılan display stilleri: `block`, `inline-block`, `inline`
 - Tarayıcı geliştirici kısmındaki computed kısmı varsayılan değerleri ifade eder
@@ -82,7 +82,7 @@ olarak değiştirilmelidir.
 - Normalize daha yaygın kullanılıyor. CSS dosyalarınızın en üstüne aşağıdaki gibi dah'l edilmeli :
 
 ```css
-@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;; ; ;
+@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;; ; ; ;
 ```
 
 ## Kısayol Tanımlamalar
