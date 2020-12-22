@@ -82,7 +82,7 @@ olarak değiştirilmelidir.
 - Normalize daha yaygın kullanılıyor. CSS dosyalarınızın en üstüne aşağıdaki gibi dah'l edilmeli :
 
 ```css
-@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;; ;
+@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;; ; ;
 ```
 
 ## Kısayol Tanımlamalar
