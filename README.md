@@ -1,11 +1,13 @@
 # CSS Notları
 
+Bu notlar [Adem İlter'in](https://github.com/ademilter) [CSS Eğitimi](https://www.youtube.com/watch?v=yJsq0bqChko) ile paralel olarak hazırlanmıştır. Başlangıç düzeyinde CSS bilgisi olan ya da mevcut bilgilerini sağlamlaştırmak isteyenler hızlı referans olması için hazırlanmıştır.
+
 ## Html Yapısı, Inline ve Block Elementler
 
-- Div ve p ⇒ display: blocktur
-- Inline elemana bazı özellikler tanımlanamaz: height gibi
-- En çok kullanılan display stilleri: block, inline-block, inline
-- Computed kısmı varsayılan değerleri ifade eder
+- `div` ve `p` `display` değeri `css display:block` olarak gelir.
+- `inline` elemana bazı özellikler tanımlanamaz: `height` gibi. Bunu yapabilmek için `css display: inline-block` olarak display seçimi yapılması gerekir.
+- En çok kullanılan display stilleri: `block`, `inline-block`, `inline`
+- Tarayıcı geliştirici kısmındaki computed kısmı varsayılan değerleri ifade eder
 
 ## Semantik HTML ve CSS Yazma Yöntemleri
 
@@ -14,10 +16,28 @@
 ## Basit Seçiciler
 
 - CSS yukarıdan aşağıya doğru kod okuma yapar.
-- => Bu seçici _universal selector_ olarak geçer. Sayfadaki herşeyi kapsar.
-- Type seçici html elementlerini seçer.
+- `*` => Bu seçici _universal selector_ olarak geçer. Sayfadaki herşeyi kapsar.
+- Type seçici html elementlerini seçer:
+
+```css
+body {
+}
+```
+
 - Class seçici ise html etiketlerine atanan classları seçer
+
+```css
+.btn {
+}
+```
+
 - Id seçici ise sayfadaki tekil olan bir anahtarı seçer
+
+```css
+#my-unique-btn {
+}
+```
+
 - Attribute selector:
 
 ```css
@@ -32,9 +52,9 @@ Not: `<h1>` sayfada bir tane bulunmalı.
 
 ## Form Elemanları
 
-- label input idsine göre ilerler
+- `label` input idsine göre ilerler
 - eğer input labelın içine yazılırsa inputa id yazmaya gerek kalmaz
-- input tiplerini text olarak bırakmamak gerekiyor. İlgili tipi yazmak daha doğru olur: email, tel, vb.
+- input tiplerini text olarak bırakmamak gerekiyor. İlgili tipi yazmak daha doğru olur: `email`, `tel`, vb.
 - radio butonlarda `name` mevcutsa butonlardan yalnızca birini seçer
 - form etiketinin default methodu `get`tir
 - form elemanlarının başarılı bir şekilde post işlemi yapabilmesi için `name`'i olması gerekiyor.
@@ -62,12 +82,12 @@ olarak değiştirilmelidir.
 - Normalize daha yaygın kullanılıyor. CSS dosyalarınızın en üstüne aşağıdaki gibi dah'l edilmeli :
 
 ```css
-@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
+@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;
 ```
 
 ## Kısayol Tanımlamalar
 
-- padding, margin gibi özellikler tanımlanırken kısayol tanımlama yapılabilir:
+- `padding`, `margin` gibi özellikler tanımlanırken kısayol tanımlama yapılabilir:
 
 ```css
 padding-top: 10px;
@@ -92,22 +112,23 @@ padding: 10px 20px 10px 30px;
 ## Renk Değerleri ve currentColor
 
 - CSS3 ile birlikte 147 tane ön tanımlı renk ismi yazabiliyoruz.
-- rgba => buradaki `a` alphayı temsil eder ve verdiğiniz değerin saydamlığını ayarlayabilirsiniz.
-
+- `rgba` => buradaki `a` alphayı temsil eder ve verdiğiniz değerin saydamlığını ayarlayabilirsiniz.
 - mevcut color rengi border rengi olarak kullanılabilir(inheritance)
 - `background-color: transparent` olarak kodladığımızda backgroundtaki rengi alabiliriz.
 
 ## Temel Ölçü Birimleri
 
-- px => Verdiğiniz değer ne ise ekranda da aynı şekilde görünür
+- `px` => Verdiğiniz değer ne ise ekranda da aynı şekilde görünür
+- `em` => Font size değeri
+- `rem` => root em, kapsayıcıya bakmadan roottaki değere bakar
+- `%` => kapsayıcının yüzdesi kadar
 
-- em => Font size değeri
-- rem => root em, kapsayıcıya bakmadan roottaki değere bakar
-- % => kapsayıcının yüzdesi kadar
-- vh
-- vw
-- vmin
-- vmax
+### Tarayıcın çalıştığı ekran büyüklüğüne göre ölçü birimleri
+
+- `vh`
+- `vw`
+- `vmin`
+- `vmax`
 
 ## Görünüm Özellikleri
 
@@ -115,4 +136,4 @@ padding: 10px 20px 10px 30px;
 - `visibility:hidden` => Ekrana yüklenir, görüntülenmez
 - `opacity: 0` neredeyse `visibility:hidden` aynı duruma gelir
 
-fotoğrafların görünümleri kapanmasına rağmen networke yüklenir (image lazy loading)
+fotoğrafların görünümleri kapanmasına rağmen networke yüklenir (`image lazy loading`)
