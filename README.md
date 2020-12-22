@@ -1,6 +1,6 @@
 # CSS Notları
 
-Bu notlar [Adem İlter'in](https://github.com/ademilter) [CSS Eğitimi](https://www.youtube.com/watch?v=yJsq0bqChko) ile paralel olarak hazırlanmıştır. Başlangıç düzeyinde CSS bilgisi olan ya da mevcut bilgilerini sağlamlaştırmak isteyenler hızlı referans olması için hazırlanmıştır.
+Bu notlar [Adem İlter'in](https://github.com/ademilter) [CSS Eğitimi](https://www.youtube.com/watch?v=yJsq0bqChko) ile paralel olarak hazırlanmıştır. Başlangıç düzeyinde CSS bilgisi olan ya da mevcut bilgilerini sağlamlaştırmak isteyenlere hızlı referans olması için hazırlanmıştır.
 
 ## Html Yapısı, Inline ve Block Elementler
 
@@ -82,7 +82,7 @@ olarak değiştirilmelidir.
 - Normalize daha yaygın kullanılıyor. CSS dosyalarınızın en üstüne aşağıdaki gibi dah'l edilmeli :
 
 ```css
-@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;
+@import https: //necolas.github.io/normalize.css/8.0.1/normalize.css;; ;
 ```
 
 ## Kısayol Tanımlamalar
